@@ -67,7 +67,7 @@ $(document).ready(function () {
 	</div>
 	<form id="form" class="form" action="signup.php" method="POST" name="rego-form" onsubmit="return validated()">
         <div class="form-control">
-			<label for="firstname">First Name</label>
+			<label for="firstname"> Name</label>
 			<input type="text" placeholder="firstname" id="firstname" name="firstname"/>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
@@ -75,8 +75,8 @@ $(document).ready(function () {
 		</div>
 
         <div class="form-control">
-			<label for="lastname">Last Name</label>
-			<input type="text" placeholder="lastname" id="lastname" name="lastname"/>
+			<label for="lastname">Telephone</label>
+			<input type="number" placeholder="lastname" id="lastname" name="lastname"/>
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
@@ -98,6 +98,14 @@ $(document).ready(function () {
 		</div>
 		
         <div class="form-control">
+			<label for="pwd">Password:</label>
+			<input type="password" id="pwd" name="pwd" minlength="8">
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+		<div class="form-control">
 			<label for="date">Date</label>
 			<input type="date" id=" date" name="date" placeholder="date" />
 			<i class="fas fa-check-circle"></i>
